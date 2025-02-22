@@ -17,7 +17,7 @@ const userCollection = db.collection("users");
 const taskCollection = db.collection("tasks");
 
 async function run() {
-    await client.connect();
+    // await client.connect();
 
     // ✅ Add User (If not exists)
     app.post('/users', async (req, res) => {
@@ -121,7 +121,7 @@ async function run() {
     });
 
 
-    console.log("✅ Database connected");
+    // console.log("✅ Database connected");
 }
 
 run().catch(console.dir);
